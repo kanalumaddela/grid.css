@@ -11,6 +11,7 @@ html {
     width: 80%;
 }
 .row {
+    display: inline-table;
     width: 100%;
     margin: 10px 0;
 }
