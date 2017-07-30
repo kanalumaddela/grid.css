@@ -2,8 +2,6 @@
 
 /* Basic Fixes */
 *, *:before, *:after {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     -webkit-box-sizing: inherit;
