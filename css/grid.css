@@ -29,12 +29,6 @@ h1,h1,h3,h4,h5,h6 {
     width: 100%;
     margin: 10px 0;
 }
-.row:not(.flex) .col {
-    display: inline-block;
-    margin: 5px 0;
-    padding: 5px;
-    width: 100%;
-}
 .row.flex {
     display: -webkit-box;
     display: -webkit-flex;
@@ -44,6 +38,16 @@ h1,h1,h3,h4,h5,h6 {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+}
+.row .col {
+    max-width: 100%;
+}
+.row:not(.flex) .col {
+    display: inline-block;
+    float: left;
+    margin: 5px 0;
+    padding: 5px;
+    width: 100%;
 }
 .row.flex .col {
     -webkit-box-flex: 1;
