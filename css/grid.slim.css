@@ -3,12 +3,10 @@
 /* Basic Fixes */
 *, *:before, *:after {
     -webkit-box-sizing: inherit;
-    -moz-box-sizing: inherit;
     box-sizing: inherit;
 }
 html {
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 h1,h2,h3,h4,h5,h6 {
@@ -17,6 +15,18 @@ h1,h2,h3,h4,h5,h6 {
 .container {
     margin: auto;
     width: 80%;
+    -webkit-transition: width 0.2s ease;
+    transition: width 0.2s ease;
+}
+@media only screen and (max-width: 992px) {
+    .container {
+        width: 85%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
 }
 .row {
     display: inline-table;
@@ -25,11 +35,12 @@ h1,h2,h3,h4,h5,h6 {
 }
 .row .col {
     max-width: 100%;
+    margin: 2.5px 0;
+    padding: 5px;
 }
 .row:not(.flex) .col {
     display: inline-block;
     float: left;
-    padding: 0 5px;
     width: 100%;
 }
 /* 10 Column Grid */
