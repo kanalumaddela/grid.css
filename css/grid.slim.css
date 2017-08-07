@@ -29,13 +29,10 @@ h1,h2,h3,h4,h5,h6 {
     }
 }
 .row {
-    display: inline-table;
-    width: 100%;
     margin: 5px 0;
 }
 .row .col {
     max-width: 100%;
-    margin: 2.5px 0;
     padding: 5px;
 }
 .row:not(.flex) .col {
