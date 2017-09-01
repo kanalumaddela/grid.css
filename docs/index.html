@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>grid.css</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com/ajax/libs">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400,600">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="./assets/css/prism-atom-dark.css" />
+    <link rel="stylesheet" href="./assets/css/grid.slim.min.css" />
+    <link rel="stylesheet" href="./assets/css/site.css" />
+</head>
+<body id="top">
+    <div class="container">
+        <nav id="navBar" class="row grid-12">
+            <div class="col l12">
+                <h1><a href="./">grid.css</a></h1>
+                <p>a css grid framework aimed at maximizing browser compatibility(ish)</p>
+            </div>
+            <div class="col s6 m4 l2">
+                <a class="navTab scrollTo" data-section="top"><span>Home</span></a>
+            </div>
+            <div class="col s6 m4 l2">
+                <a class="navTab scrollTo" data-section="about"><span>About</span></a>
+            </div>
+            <div class="col s6 m4 l2">
+                <a class="navTab scrollTo" data-section="getting-started"><span>Getting Started</span></a>
+            </div>
+            <div class="col s6 m4 l2">
+                <a class="navTab scrollTo" data-section="grids"><span>Grids</span></a>
+            </div>
+            <div class="col s6 m4 l2">
+                <a class="navTab scrollTo" data-section="columns"><span>Columns</span></a>
+            </div>
+            <div class="col s6 m4 l2">
+                <a class="navTab scrollTo" data-section="templates"><span>Templates</span></a>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div id="about" class="content">
+            <h1>About</h1>
+            <p>
+                I only made this because a lot of my work involves sites related to garry's mod which uses Awesomium (Chrome 18). I made a minor specific fix, but then go to thinking if I made a framework, so it's easier. I wanted some serious browser compatibility along with the ability to opt for newer css features like flexbox, so I made this. I also wanted to allow different grids and added in a 10,12, and 16 column layout. This is a desktop first framework meaning that with something like <pre><code class="language-html">&lt;!-- full width on small, half width on medium, third width on large -->
+&lt;div class="col s12 m6 l4">&lt;/div></code></pre> the desktop width ( <code>col l4</code> ) takes precedence on devices that don't support media queries.
+            </p>
+        </div>
+        <div id="getting-started" class="content">
+            <h1>Getting Started</h1>
+            <ol>
+                <li>Download the latest version from the <a href="https://github.com/kanalumaddela/grid.css/archive/master.zip" class="link">repo</a> and place the files in your webspace</li>
+                <li>
+                    <span>Create your template page (best to remove comments)</span>
+                    <br>
+                    <pre><code class="language-html">&lt;!DOCTYPE html>
+&lt;html lang="en">
+&lt;head>
+    &lt;title>My Page&lt;/title>
+    &lt;meta charset="utf-8">
+    &lt;!-- Mobile Support -->
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    &lt;!-- Reduces DNS Lookups, optional, but helps if loading multiple assets from cdnjs -->
+    &lt;link rel="dns-prefetch" href="https://cdnjs.cloudflare.com/ajax/libs">
+    &lt;!-- normalize.css, required -->
+    &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+    &lt;!-- grid.css, grid.slim preferred -->
+    &lt;link rel="stylesheet" href="path/to/css/grid.slim.min.css" />
+&lt;/head>
+&lt;body>
+    &lt;div class="container">
+        &lt;!-- 12 grid system is preferred -->
+        &lt;div class="row grid-12">
+            &lt;!-- colums go here -->
+        &lt;/div>
+    &lt;/div>
+&lt;/body>
+&lt;/html></code></pre>
+                </li>
+                <li>
+                    You'll notice there are 3 distinct css files to choose from (and their .min.css versions). Link the one that you feel would be best for your project.
+                    <ul>
+                        <li>grid - both grid.flex.css & grid.slim.css</li>
+                        <li>grid.flex - uses flexbox for the grid layout, works on most modern browsers</li>
+                        <li>grid.slim - uses <code>display: inline-block</code> for the grid layout, works on both old and modern browsers</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        <div id="grids" class="content">
+            <h1>Grids</h1>
+            <p>To do...</p>
+        </div>
+        <div id="columns" class="content">
+            <h1>Columns</h1>
+            <p>To do...</p>
+        </div>
+        <div id="templates" class="content">
+            <h1>Templates</h1>
+            <p>To do...</p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/prism.min.js"></script>
+    <script src="./assets/js/site.js"></script>
+</body>
+</html>
