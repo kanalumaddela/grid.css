@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+*, *:before, *:after {
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+body {
+    padding: 15px 0 25px;
+    font-family: 'Raleway',sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    background-color: #1d292f;
+}
+a {
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin: 5px 0;
+    font-weight: 600;
+}
+li {
+    line-height: 1.5rem;
+}
+ol {
+    margin: 0;
+}
+p {
+    margin: 3px 0;
+    line-height: 1.35rem;
+}
+pre {
+    max-width: 100%;
+    max-height: 35em;
+    overflow: auto;
+}
+/* navigation */
+#navBar {
+    text-align: center;
+}
+.navTab {
+    display: inline-block;
+    cursor: pointer;
+    padding: 8px 15px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow: hidden;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -webkit-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+.navTab > span {
+    display: inline-block;
+    -webkit-transform: skewX(25deg);
+    transform: skewX(25deg);
+}
+.navTab:hover {
+    opacity: 0.65;
+}
+/* main stuff */
+.content {
+    margin-top: 25px;
+    font-weight: 300;
+}
+.link {
+    font-weight: 600;
+    color: #03A9F4;
+}
+/* prism */
+code[class*="language-"], pre[class*="language-"] {
+    line-height: normal;
+}
